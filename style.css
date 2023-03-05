@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* in questo caso il wrapper serve a centrare il contenitore delle barzellette. non ho messo il lato responsive,
+    ma ho provveduto usando flexbox per comodità perché tanto dovevo solo provare l'API
+*/
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #15161a;
+  box-shadow: 20px 20px 40px rgba(97, 63, 0, 0.4);
+  border-radius: 10px;
+  width: 80vmin;
+  padding: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .face-and-joke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  gap: 2rem;
+}
+.container .face-and-joke p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container button {
+  background-color: #fab22e;
+  border: none;
+  padding: 15px 35px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #15161a;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.container button:hover,
+.container button:active {
+  transform: scale(0.95);
+}
